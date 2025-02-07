@@ -1,0 +1,35 @@
+
+version: 2
+
+models:
+  - name: customers
+    description: "customers"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: first_name
+      - name: last_name
+
+  - name: orders
+    description: "A "
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: user_id
+      - name: order_date
+      - name: status
+      
+  - name: customer_orders
+     description: "A "
+     columns:
+      - name: customer_id
+      - name: first_order_date
+      - name: most_recent_order_date
+      - name: number_of_orders 
+
