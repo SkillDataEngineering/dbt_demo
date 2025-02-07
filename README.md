@@ -9,6 +9,3 @@
 *We are going to need a data platform and we selected Google BigQuery for now*
 
 `dbt --version`
-
-
-
